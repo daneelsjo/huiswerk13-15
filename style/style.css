@@ -1,0 +1,77 @@
+html{
+ min-height: 100%;  
+ position: relative; 
+}
+body{
+font-family: 'Times New Roman', Times, serif;
+margin: 0;
+padding-bottom: 30px;
+background-color: aqua;
+}
+
+/* opmaak header */
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin: 0;
+    background-color: brown;
+}
+/* opmaak navigatie */
+.menu ul a{
+    color: white;
+    text-decoration: none; 
+}
+.menu li{
+    display: inline-block;
+    padding: 10px;
+    height: 25px;
+    width: 125px;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    margin: 10px;
+    border-radius: 25px;
+}
+.menu li:hover{
+    background-color: orange;
+}
+
+/* opmaak footer */
+footer{
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ height: 30px;
+ background-color: blue;
+ color: white;
+ text-align: center;
+ padding: 10px;
+}
+/* opmaak main */
+.main{
+ height: 80%;
+ display: flex;
+ width: 80%;
+ background-color: whitesmoke;
+ margin: 0 auto;
+}
+article{
+    margin: 10px;
+}
+
+/* opmaak foto on index */
+.foto{
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foto img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 20px;
+}
