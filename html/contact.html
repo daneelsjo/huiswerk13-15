@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="nl">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <link href="../style/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Stukje dat overal het zelfde dient te zijn + menu-->
+        <h1>Daneels Jo</h1>
+   <nav>
+    <div class="menu">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="./mijncv.html">CV</a></li>
+<li><a href="./contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+        
+        </header>
+
+<!-- invulling main-->
+<div class="main">
+<article>
+ <!-- Start formulier-->
+<form id="contactform" method="post" action="https://formspree.io/f/xrgdyobn">
+<!-- Deel 1, contact gegevens patiënt-->
+<fieldset>
+<legend>Gegevens</legend>
+<table width="650" border="0">
+    <tbody>
+        <tr>
+            <td width="200"><b>Uw naam en voornaam</b></td>
+            <td width="400"><input type="text" name="naam" placeholder="Naam en voornaam"></td>
+        </tr>
+        <tr>
+            <td><b>Uw geboortedatum</b></td>
+            <td><input type="date" name="gebootedatum" max="2080-12-31"></td>
+        </tr>
+        <tr>
+            <td width="200"><b>Uw adres</b></td>
+            <td width="400"><input type="text" name="adres" placeholder="Straatnaam en huisnummer"></td>
+        </tr>
+        <tr>
+            <td><b>Uw e-mailadres</b></td>
+            <td><input type="email" name="emailadres"></td>
+        </tr>
+        <tr>
+            <td><b>Uw telefoonnummer</b></td>
+            <td><input type="tel" name="telefoonnummer"></td>
+        </tr>
+
+        </tbody>
+</table>
+</fieldset>
+
+<!-- Deel 2, beschrijving klachten-->
+<fieldset>
+<legend>Klachten</legend>
+<table width="650" border="0">
+    <tbody>
+        <tr>
+            <td><b>Uw klacht</b></td>
+            <td>
+                <input type="radio" name="Klacht" value="Jaarlijks onderzoek">Jaarlijks onderzoek
+                <input type="radio" name="Klacht" value="tandprotesen maken">tandprotesen
+                <input type="radio" name="Klacht" value="minimum tandpijn">minimum tandpijn
+                <input type="radio" name="Klacht" value="zware tandpijn">zware tandpijn
+            </td>
+        </tr>
+        <tr>
+            <td><b>Eventueel bestand</b></td>
+            <td><input type="file" name="document"></td>
+        </tr>
+    </tbody>
+</table>
+</fieldset>
+<!-- Deel 3, toelichting + datumkeuze-->    
+<fieldset>
+<legend>Toelichting + datumprikker</legend>
+<table width="650" border="0">
+    <tbody>
+        <tr>
+            <td width="200"><b>Toelichting klachten</b></td>
+            <td width="400"><textarea name="toelichting" maxlength="500"></textarea></td>
+        </tr>
+        <tr>
+            <td><b>Kies uw datum</b></td>
+            <td><input type="date" name="afspraakdate" max="2080-12-31"></td>
+        </tr>
+    </tbody>
+</table>
+</fieldset>
+<br>
+
+<input type="submit" value="Verzend">
+</form>
     
-</body>
+</article>
+</div>
+<footer>
+    <p>© 2023 Daneels Jonathan</p>
+</footer>
+    </body>
 </html>
